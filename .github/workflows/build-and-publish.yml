@@ -15,7 +15,7 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     env:
-      ORG_GRADLE_PROJECT_MAVEN_URL: ${{ secrets.MOD_MAVEN_URL }}
+      ORG_GRADLE_PROJECT_MAVEN_URL: ${{ vars.MOD_MAVEN_URL }}
       ORG_GRADLE_PROJECT_MAVEN_USER: ${{ secrets.MOD_MAVEN_USER }}
       ORG_GRADLE_PROJECT_MAVEN_PASS: ${{ secrets.MOD_MAVEN_PASS }}
 
